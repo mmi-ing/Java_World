@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 외부의 DTD를 참조한다. -->
+<!DOCTYPE root SYSTEM "ex5.dtd">
+<root>
+	<person>
+		<name>마루치</name>
+		<age>20</age>
+		<phone 통신사="SKT">010</phone>
+		<email>maru@korea.com</email>
+	</person>
+	<person>
+		<name>아라치</name>
+		<age>21</age>
+		<phone 통신사="SKT">010</phone>
+		<phone 통신사="SKT">010</phone>
+	</person>
+</root>

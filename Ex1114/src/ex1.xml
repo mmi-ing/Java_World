@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<test>
+    <personal id = "a1">
+        <name>홍길동</name>
+    </personal>
+    <personal id = "a2">
+        <name>마루치</name>
+    </personal>
+</test>

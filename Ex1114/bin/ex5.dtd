@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT root (person+)>
+<!-- 
+	* : 생략 가능, 중복 가능
+	+ : 생략 불가능, 중복 가능
+	? : 생략 가능, 중복 불가능
+-->
+<!ELEMENT person (name, age, phone*, email?)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT age (#PCDATA)>
+<!ELEMENT phone (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+
+<!ATTLIST person no CDATA #FIXED "A10">
+<!ATTLIST phone 통신사 CDATA #REQUIRED>
+<!-- 
+	위는 person요소에 no라는 속성을 설정한 것이다.
+	만약! person요소에 no라는 속성을 정의한다면
+	반드시 속성의 값이 "A10"이어야 한다.
+	phone요소에는 통신사라는 속성이 반드시 정의해야 한다. 
+	-->
