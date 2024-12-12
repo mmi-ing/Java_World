@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      #body {
+        background-color: #232323;
+        color: #fff;
+      }
+      #wrap {
+        width: 700px;
+        border: 2px solid #fff;
+        margin: 50px auto;
+      }
+      #wrap a {
+        color: #fff;
+      }
+      #wrap>header>h1 {
+        font: bold 35px sans-serif;
+        margin: 10px;
+      }
+      ul#carList {
+        list-style: none;
+      }
+      li.car {
+        width: 170px;
+        border: 1px solid #fff;
+        text-align: center;
+        display: inline-block;
+        margin: 0 0 46px 46px; /*top right bottom left (사계방향이라고 생각하면 됨) */
+        padding-bottom: 10px;
+      }
+      li.car>span>a {
+        font: 15px sans-serif;
+        text-decoration: none; /* 밑줄 없애기 */
+      }
+      li.car>a { /* 자동차 이미지를 감싸고 있는 a태그 */
+        display: block;
+        width: 160px;
+        height: 120px;
+        border: 5px solid #232323;
+      }
+      li.car>a:hover { /* 자동차 이미지를 감싸고 있는 a태그 */
+        border: 5px solid red;
+      }
+      /*#carList {*/
+      /*  list-style: none;*/
+      /*  display: flex;*/
+      /*  flex-wrap: wrap;          !* 한 줄에 3개씩 배치되도록 설정 *!*/
+      /*  justify-content: center;  !* 가운데 정렬 *!*/
+      /*  gap: 300px;                !* 항목 사이 간격 *!*/
+      /*  padding: 0;*/
+      /*}*/
+      /*#carList > li {*/
+      /*  width: 170px;             !* 항목의 너비를 고정 *!*/
+      /*  height: 200px;            !* 항목의 높이를 조정 *!*/
+      /*  text-align: center;       !* 텍스트 가운데 정렬 *!*/
+      /*  border: 2px solid yellow;*/
+      /*  box-sizing: border-box;   !* padding과 border를 width에 포함 *!*/
+      /*}*/
+      /*#carList>li>a {*/
+      /*  display: block;*/
+      /*  width: 160px;*/
+      /*  height: 100%;*/
+      /*  border: 2px solid red;*/
+      /*}*/
+      /*#carList>li>span>a {*/
+      /*  color: white;*/
+      /*  text-decoration: none;*/
+      /*}*/
+      /*#carList>li>a>img {*/
+      /*  display: block;*/
+      /*  width: 200px;*/
+      /*  height: 180px;*/
+      /*  border: 2px solid blue;*/
+      /*}*/
+      /*#carList>li>a>img:hover {*/
+      /*  display: block;*/
+      /*  width: 200px;*/
+      /*  height: 180px;*/
+      /*  border: 2px solid red;*/
+      /*}*/
+    </style>
+</head>
+<body id="body">
+  <div id="wrap">
+    <header>
+      <h1>자동차 목록</h1>
+    </header>
+    <ul id="carList">
+      <li class="car">
+        <a href=""> <img src="./images/Audi-R8.jpg"/> </a>
+        <span><a href="">Audi-R8</a></span>
+      </li>
+      <li class="car">
+        <a href=""> <img src="./images/Aston_Martin-One-77.jpg"/> </a>
+        <span><a href="">Aston Martin One 77</a></span>
+      </li>
+      <li class="car">
+        <a href=""> <img src="./images/Bentley-Continental_GTC.jpg"/> </a>
+        <span><a href="">Bentley Continental GTC</a></span>
+      </li>
+      <li class="car">
+        <a href=""> <img src="./images/BMW-Z4.jpg"/> </a>
+        <span><a href="">BMW Z4</a></span>
+      </li>
+      <li class="car">
+        <a href=""> <img src="./images/Ferrari-458_Italia.jpg"/> </a>
+        <span><a href="">Ferrari 458 Italia</a></span>
+      </li>
+      <li class="car">
+        <a href=""> <img src="./images/Hyundai-Genesis.jpg"/> </a>
+        <span><a href="">Hyundai Genesis</a></span>
+      </li>
+      <li class="car">
+        <a href=""> <img src="./images/Jaguar-XJ.jpg"/> </a>
+        <span><a href="">Jaguar-XJ</a></span>
+      </li>
+      <li class="car">
+        <a href=""> <img src="./images/Lamborghini-Reventon.jpg"/> </a>
+        <span><a href="">Lamborghini Reventon</a></span>
+      </li>
+      <li class="car">
+        <a href=""> <img src="./images/Mercedes-Benz-SLR_McLaren_Roadster.jpg"/> </a>
+        <span><a href="">Mercedes Benz Roadster</a></span>
+      </li>
+    </ul>
+  </div>
+</body>
+</html>

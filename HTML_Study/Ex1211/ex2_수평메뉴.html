@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      #header {
+        height: 80px;
+        color: black;
+        background-color: #2e2e2e;
+      }
+      #nav {
+        list-style: none;
+        font: 22px Arial;
+        line-height: 80px;
+      }
+      #nav>li {
+        display: inline-block;
+        margin-left: 20px;
+      }
+      /* li태그 안에 있는 a태그를 선택하여 글꼴의 색을 흰색으로 지정하고, 밑줄을 없애자! */
+      #nav>li>a {
+        color: #fff;
+        text-decoration: none;
+      }
+      #nav>li>a:hover {
+        color: #00bfff;
+      }
+      /* 선택된 메뉴를 의미하는 class */
+      .selected {
+        color: #ff8000;
+        font-weight: bold;
+        border-bottom: 4px solid #ff8000;
+      }
+    </style>
+</head>
+<body>
+  <article>
+    <header id="header">
+      <ul id="nav">
+        <li><a href="">Home</a></li>
+        <li><a href="" class="selected">Product</a></li>
+        <li><a href="">e-Biz</a></li>
+        <li><a href="">Board</a></li>
+        <li><a href="">About</a></li>
+      </ul>
+    </header>
+  </article>
+</body>
+</html>

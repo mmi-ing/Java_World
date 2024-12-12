@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #menu {
+            list-style: none; /* li앞에 있는 기호 없애기 */
+            width: 600px;
+            padding: 0px;
+            margin: 0px;
+            display: flex; /**/
+            border: 1px solid red;
+            flex-direction: row; /* 기본값 */
+        }
+        #menu > li {
+            height: 50px;
+            background-color: aquamarine;
+            border: 1px solid blue;
+        }
+        .item {
+            flex-grow: 1;  /* 남은 공간에서 차지할 영역 지정
+                              1 아니면 0으로 구분한다. 1은 1인분 즉 균등분할 */
+            flex-shrink: 1;
+            /* 기본값 1  ol이 줄어들 때 얼마나 축소될 지 결정함! */
+            flex-basis: auto;
+            /* 기본 크기 설정 */
+            flex: 1 1 0; /* grow shrink basis */
+        }
+    </style>
+</head>
+<body>
+    <article>
+        <header>
+            <h2>flex 박스개념</h2>
+        </header>
+        <div>
+            <ul id="menu">
+                <li class="item">메뉴1</li>
+                <li class="item">메뉴2</li>
+                <li class="item">메뉴3</li>
+                <li class="item">메뉴4</li>
+            </ul>
+        </div>
+    </article>
+</body>
+</html>

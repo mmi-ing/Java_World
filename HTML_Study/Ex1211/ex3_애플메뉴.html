@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: #1f1f1f;
+      }
+      #header {
+        height: 44px;
+        background-color: #2e2e2e;
+      }
+      #nav {
+        list-style: none;
+        text-align: center;
+        /*display: flex;*/
+        font: 14px Sans-serif;
+        line-height: 44px;
+      }
+      #nav>li{
+        display: inline-block;
+        margin-right: 30px;
+      }
+      #nav>li>a {
+        /*display: block;*/
+        color: #e2eeff;
+        text-decoration: none;
+      }
+      #apple {
+        background-image: url("./images/icon_apple.svg");
+        width: 16px;
+        background-size: 16px 44px;
+        position: absolute;
+        top: 0px;
+        /*left: px;*/
+        background-repeat: no-repeat;
+        background-position: left top;
+        /*border: 2px solid red;*/
+      }
+      #nav>li>a:hover {
+        color: #fff;
+      }
+    </style>
+</head>
+<body>
+  <article id="wrap">
+    <header id="header">
+      <ul id="nav">
+        <li><a href="" id="apple">&nbsp;</a></li>
+        <li><a href="">Store</a></li>
+        <li><a href="">Mac</a></li>
+        <li><a href="">iPad</a></li>
+        <li><a href="">iPhone</a></li>
+        <li><a href="">Watch</a></li>
+        <li><a href="">Vision</a></li>
+        <li><a href="">AirPods</a></li>
+        <li><a href="">TV&Home</a></li>
+        <li><a href="">Entertainment</a></li>
+        <li><a href="">Accessories</a></li>
+        <li><a href="">Support</a></li>
+      </ul>
+    </header>
+  </article>
+
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+      #menu {
+        width: 982px;
+        height: 38px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        /*font-size: 0;*/
+        display: flex;
+        /*background-image: url("./images/apple_menu.gif");*/
+        /*background-repeat: no-repeat;*/
+        background: url("./images/apple_menu.gif") no-repeat;
+      }
+      #menu>li {
+        width: 136px;
+        height: 38px;
+        margin: 0;
+        padding: 0;
+        /*border: 2px solid red;*/
+      }
+      #menu>li>a {
+        /*border: 1px solid red;*/
+        display: block;
+        width: 100%;
+        height: 100%;
+        text-indent: -9999px;
+        background: url("./images/apple_menu.gif") no-repeat;
+      }
+      #menu>li#apple>a {
+        background-position: 0px 0px;
+      }
+      #menu>li#Store>a {
+        background-position: -136px 0px;
+      }
+      #menu>li#Mac>a {
+        background-position: -272px 0px;
+      }
+      #menu>li#iPodiTunes>a {
+        background-position: -408px 0px;
+      }
+      #menu>li#download>a {
+        background-position: -544px 0px;
+      }
+      #menu>li#support>a {
+        background-position: -680px 0px;
+      }
+      /* 마우스가 a태그에 올라갔을 때 바로 아래에 있는 이미지로 변경 */
+      #menu>li#apple>a:hover {
+        background-position: 0px -38px;
+      }
+      #menu>li#Store>a:hover {
+        background-position: -136px -38px;
+      }
+      #menu>li#Mac>a:hover {
+        background-position: -272px -38px;
+      }
+      #menu>li#iPodiTunes>a:hover {
+        background-position: -408px -38px;
+      }
+      #menu>li#download>a:hover {
+        background-position: -544px -38px;
+      }
+      #menu>li#support>a:hover {
+        background-position: -680px -38px;
+      }
+      /* 마우스가 a태그를 누를 때 바로 아래에 있는 이미지로 변경 */
+      #menu>li#apple>a:active {
+        background-position: 0px -76px;
+      }
+      #menu>li#Store>a:active {
+        background-position: -136px -76px;
+      }
+      #menu>li#Mac>a:active {
+        background-position: -272px -76px;
+      }
+      #menu>li#iPodiTunes>a:active {
+        background-position: -408px -76px;
+      }
+      #menu>li#download>a:active {
+        background-position: -544px -76px;
+      }
+      #menu>li#support>a:active {
+        background-position: -680px -76px;
+      }
+
+    </style>
+</head>
+<body>
+  <article>
+    <header id="nav">
+      <ul id="menu">
+        <li id="apple"><a href="">apple</a></li>
+        <li id="Store"><a href="">Store</a></li>
+        <li id="Mac"><a href="">Mac</a></li>
+        <li id="iPodiTunes"><a href="">iPod+iTunes</a></li>
+        <li id="download"><a href="">download</a></li>
+        <li id="support"><a href="">Support</a></li>
+      </ul>
+    </header>
+  </article>
+
+</body>
+</html>
