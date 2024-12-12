@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    #wrap {
+      width: 1000px;
+      margin: 0px auto;
+      /* 화면 가운데에 배치하기 위해 상/하를 0px로 지정했고, 좌/우는 auto로 즉, 자동화(균등분할)한다.*/
+      /*한 개당 두 개의 영역 지정 0px:위 아래, auto:좌우*/
+      background-color: #cdcdcd;
+      font-size: 0;
+    }
+    #top {
+      width: 100%; /* 1000px */
+      height: 90px;
+      background-color: #a700ff;
+    }
+    #footer {
+      width: 100%;
+      height: 50px;
+      background-color: #a7ff00;
+      display: inline-block;
+    }
+    #left {
+      width: 200px;
+      height: 600px;
+      background-color: #00a7ff;
+      display: inline-block;
+    }
+    #content {
+      width: 800px;
+      height: 600px;
+      background-color: #89aa89;
+      display: inline-block;
+    }
+    /*.clear {*/
+    /*  clear: both; !* 이 전까지 이루어졌던 float 개념을 여기서 끝 *!*/
+    /*}*/
+    * {
+      padding: 0;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+<article id="wrap">
+  <div id="top">
+    <h1>Top메뉴</h1>
+  </div>
+  <div id="left">
+    <h1>Left메뉴</h1>
+  </div>
+  <div id="content">
+    <h1>콘텐츠</h1>
+  </div>
+  <div id="footer">
+    <h1>Footer영역</h1>
+  </div>
+  <div class="clear"></div>
+</article>
+</body>
+</html>

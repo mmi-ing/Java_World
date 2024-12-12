@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+      /* 테이블의 선을 실선으로 나타내기 위해 설정한다. */
+      #t1 { /* 아이디 선택자 */
+        border-collapse: collapse;
+        /*border: 1px solid #000000;*/
+        width: 600px;
+      }
+      /* 아이디가 t1인 요소의 자손들 중 th와 td를 만나면 정용하는 것들 */
+      #t1 th, #t1 td {
+        border: 1px solid #000000;
+        padding: 6px;
+      }
+      #t1>tfoot>tr>td {
+        text-align: right;
+        border: none;
+      }
+      .color { /*#t1 th*/
+        background-color: #00bfff;
+      }
+      /* caption이 존재하지만 안보이도록 하기*/
+      #t1>caption {
+        text-indent: -9999px;
+        height: 0px;
+      }
+    </style>
+</head>
+<body>
+  <table id="t1">
+    <caption>연습용 테이블</caption>
+    <colgroup>
+      <col width="100px">
+      <col width="*">
+    </colgroup>
+    <tbody>
+      <tr>
+        <th class="color">제목</th>
+        <td>테이블 연습입니다.</td>
+      </tr>
+      <tr>
+        <th class="color">글쓴이</th>
+        <td>이도</td>
+      </tr>
+      <tr>
+        <th class="color">등록일</th>
+        <td>2024년 12월 10일</td>
+      </tr>
+      <tr>
+        <th class="color">내용</th>
+        <td>
+          여기는 글 내용이 표현되는 곳입니다. 그리고<br/>
+          연습으로 글을 써 봅니다. 잘~ 보이고 있군요!<br/>
+          ㅎㅎㅎㅎㅎㅎㅎ
+        </td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td class="button" colspan="2">
+          <input type="button" value="목록"/>
+          <button type="button">뒤로</button>
+          <button type="button">답변</button>
+        </td>
+      </tr>
+    </tfoot>
+  </table>
+  <div>
+    <input type="button" value="목록"/>
+    <button type="button">뒤로</button>
+    <button type="button">답변</button>
+  </div>
+</body>
+</html>

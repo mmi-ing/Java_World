@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+      #menu {
+        list-style: none;
+        width: 300px;
+        padding: 0;
+        margin: 0;
+        /*border: 1px solid red;*/
+      }
+      /*li태그들의 너비를 ul태그와 같게하고, 높이를 100px로 지정하자*/
+      #menu>li {
+        width: 100%;
+        height: 100px;
+      }
+      /*li태그 안에 있는 a태그의 크기를 li와 같도록 하고, 문자열들은 보이지 않도록 하자!*/
+      #menu>li>a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        text-indent: -9999px;
+        /*border: 1px solid blue;*/
+      }
+      /* 아이디가 mail인 요소 안에 있는 a태그의 배경 이미지를 images/mail.gif로 지정한다.*/
+      #mail > a {
+        background-image: url("./images/mail.gif");
+        background-repeat: no-repeat; /* 반복적용 안함! */
+        background-position: left top;
+      }
+      #blog > a {
+        background-image: url("./images/blog.gif");
+        background-repeat: no-repeat; /* 반복적용 안함! */
+        background-position: left top;
+      }
+      #cafe > a {
+        background-image: url("./images/cafe.gif");
+        background-repeat: no-repeat; /* 반복적용 안함! */
+        background-position: left top;
+      }
+      #kin > a {
+        background-image: url("./images/kin.gif");
+        background-repeat: no-repeat; /* 반복적용 안함! */
+        background-position: left top;
+      }
+      #menu > li > a:hover { background-position: right top; }
+    </style>
+</head>
+<body>
+  <article>
+    <header>
+      <h2>이미지를 이용한 수직메뉴</h2>
+    </header>
+    <div>
+      <ul id="menu">
+        <li id="mail"><a href="">mail</a></li>
+        <li id="blog"><a href="">blog</a></li>
+        <li id="cafe"><a href="">cafe</a></li>
+        <li id="kin"><a href="">kin</a></li>
+      </ul>
+    </div>
+  </article>
+
+</body>
+</html>

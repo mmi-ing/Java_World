@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <article>
+    <header>
+      <h2>폼 연습</h2>
+    </header>
+    <div>
+      <form action="" method="">
+      <!-- input에서 type을 생략하면 기본이 type="text"다 -->
+        <input type="text" name="s1" placeholder="user name.."/>
+        <br/>
+        <select id="s2" name="s2"> <!-- 선택시 서버로 전달되는 값은-->
+          <option selected="selected">:: 도시선택 ::</option>
+          <option value="seoul">서울</option>
+          <option value="incheon">인천</option>
+          <option value="gyeonggi">경기</option>
+        </select>
+        <br/>
+
+        <!-- 체크박스들은 하나의 그룹은 name으로 구분
+             그래서 하나인 그룹은 name이 같아야 한다.
+             (이렇게 이름이 같은 요소들이 서버로 전달될 때는 하나의 배열로 전달된다.)-->
+
+        <input type="checkbox" id="ch1" name="hobby" value="1">
+        <label for="ch1">영화감상</label>
+        &nbsp;&nbsp;
+        <input type="checkbox" id="ch2" name="hobby" value="2"/>
+        <label for="ch2">음악감상</label>
+        &nbsp;&nbsp;
+        <input type="checkbox" id="ch3" name="hobby" value="3"/>
+        <label for="ch3">독서</label>
+        &nbsp;&nbsp;
+        <input type="checkbox" id="ch4" name="hobby" value="4"/>
+        <label for="ch4">유투브 감상</label>
+        &nbsp;&nbsp;
+        <input type="checkbox" id="ch5" name="hobby" value="5"/>
+        <label for="ch5">LOL</label>
+        <br/>
+
+        <!-- 전화번호 입력 -->
+        <input type="tel" id="tel" name="tel" placeholder="cell phone..."/>
+        <br/>
+        <!-- 이메일 입력 -->
+        <input type="email" id="email" name="email" placeholder="email..."/>
+        <br/>
+        <!-- 성별
+             : 라디오버튼은 그룹이 형성되어야 한다. 그룹은 name으로 지정한다. -->
+        <input type="radio" id="ra1" name="gender" value="0"/>
+        <label for="ra1">여자</label>
+        &nbsp;&nbsp;
+        <input type="radio" id="ra2" name="gender" value="1"/>
+        <label for="ra2">남자</label>
+        <br/>
+        <textarea rows="5" cols="50" id="ta" name="desc"></textarea>
+        <br/>
+        <input type="file" id="file" name="file" placeholder="select file...">
+        <br/>
+        <button type="button">보내기</button>
+        <button type="button">취소</button>
+      </form>
+    </div>
+  </article>
+</body>
+</html>
