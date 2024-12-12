@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*현재 문서에서 table이라는 태그를 만나면 다음을 수행하도록 한다.*/
+        table#t1 {
+            width: 500px;
+            border: 1px solid #000000;
+        }
+        table#t2 {
+            width: 400px;
+            border-collapse: collapse;
+            /* 기본적으로 가지고 있던 보더의 속성을 없앤다.*/
+        }
+        td, th {
+            border: 1px solid #000000;
+        }
+        /*thead의 자식들 중 tr을 만났을 때 수행*/
+        thead>tr{
+            background-color: #00bfff;
+        }
+    </style>
+</head>
+<body>
+    <article>
+        <header>
+            <h2> 테이브로가 css 연습 </h2>
+        </header>
+        <div>
+            <table id="t1">
+                <caption>사원 테이블</caption>
+                <thead>
+                    <tr>
+                        <th>사번</th>
+                        <th>이름</th>
+                        <th>직종</th>
+                        <th>이메일</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>7689</td>
+                        <td>스미스</td>
+                        <td>DEVELOP</td>
+                        <td>sm@korea.com</td>
+                    </tr>
+                    <tr>
+                        <td>7788</td>
+                        <td>마루치</td>
+                        <td>DEVELOP</td>
+                        <td>maru@korea.com</td>
+                    </tr>
+                    <tr>
+                        <td>8252</td>
+                        <td>마이클</td>
+                        <td>DEVELOP</td>
+                        <td>michael@korea.com</td>
+                    </tr>
+                    <tr>
+                        <td>8089</td>
+                        <td>이순신</td>
+                        <td>DEVELOP</td>
+                        <td>ss@korea.com</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table id="t2">
+                <caption>사원 테이블</caption>
+                <thead>
+                <tr>
+                    <th>사번</th>
+                    <th>이름</th>
+                    <th>직종</th>
+                    <th>이메일</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>7689</td>
+                    <td>스미스</td>
+                    <td>DEVELOP</td>
+                    <td>sm@korea.com</td>
+                </tr>
+                <tr>
+                    <td>7788</td>
+                    <td>마루치</td>
+                    <td>DEVELOP</td>
+                    <td>maru@korea.com</td>
+                </tr>
+                <tr>
+                    <td>8252</td>
+                    <td>마이클</td>
+                    <td>DEVELOP</td>
+                    <td>michael@korea.com</td>
+                </tr>
+                <tr>
+                    <td>8089</td>
+                    <td>이순신</td>
+                    <td>DEVELOP</td>
+                    <td>ss@korea.com</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </article>
+</body>
+</html>

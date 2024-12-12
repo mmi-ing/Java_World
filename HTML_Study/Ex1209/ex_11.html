@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style>
+    table { /* 요소 선택자 */
+      border-collapse: collapse;
+      border: 1px solid #000000;
+    }
+    tbody > tr > td { /* 자식 선택자 */
+      border: 1px solid #000000;
+    }
+    /* CSS의 클래스 정의 */
+    .txtCenter {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <article>
+    <header>
+      <h2>문제1</h2>
+    </header>
+    <div>
+      <table>
+        <caption>이미지테이블</caption>
+        <tbody>
+          <tr> <!-- 행 -->
+            <td><img src="./images/1.jpg" alt="이미지1"/></td>
+            <td class="txtCenter">고요함</td>
+            <td><img src="./images/2.jpg" alt="이미지2"/></td>
+          </tr>
+          <tr> <!-- 행 -->
+            <td class="txtCenter">외침 속</td>
+            <td><img src="./images/3.jpg" alt="이미지3"/></td>
+            <td class="txtCenter">항해</td>
+            <td></td>
+          </tr>
+          <tr> <!-- 행 -->
+            <td><img src="./images/4.jpg" alt="이미지4"/></td>
+            <td class="txtCenter">봄의 옷</td>
+            <td><img src="./images/5.jpg" alt="이미지5"/></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </article>
+
+  <article>
+    <header>
+      <h2>문제 2</h2>
+    </header>
+    <div>
+      <table>
+        <caption>테이블 병합</caption>
+        <!-- 각 컬럼별 너비를 지정할 수 있다 -->
+        <colgroup>
+          <col width="100px"/> <!-- 첫 번째 칼럼의 넓이가 100px -->
+          <col width="150px"/> <!-- 두 번째 칼럼의 넓이가 150px -->
+          <col width="100px"/> <!-- 세 번째 칼럼의 넓이가 100px -->
+        </colgroup>
+        <tbody>
+        <tr class="txtCenter">
+            <td rowspan="3">사진</td>
+            <td colspan="2">타이틀 입니다</td>
+          </tr>
+          <tr class="txtCenter">
+            <td>데이터</td>
+            <td>데이터</td>
+          </tr>
+          <tr class="txtCenter">
+            <td>데이터</td>
+            <td>데이터</td>
+          </tr>
+          <tr class="txtCenter">
+            <td>데이터</td>
+            <td>데이터</td>
+            <td>데이터</td>
+          </tr>
+          <tr class="txtCenter">
+            <td>데이터</td>
+          </tr>
+          <tr class="txtCenter">
+            <td>데이터</td>
+          </tr>
+          <tr class="txtCenter">
+            <td>데이터</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </article>
+</body>
+</html>
