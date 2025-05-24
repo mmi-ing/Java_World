@@ -1,0 +1,30 @@
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: frontend
+    # volumes:
+    #   - static-files:/app/out
+    networks:
+      - sist_net
+  nginx:
+    image: nginx:latest
+    networks:
+      - sist_net
+    restart: always
+    volumes:
+      # - static-files:/usr/share/nginx/html:ro
+      - ./conf/default.conf:/etc/nginx/conf.d/default.conf:ro
+      # 현재 파일의 .conf 파일을 nginx의 .conf 파일로 사용하겠다
+    ports:
+      - "80:80"
+    depends_on:
+      - frontend
+# volumes:
+#   static-files:
+
+networks:
+  sist_net:
+    driver: bridge
+    external: true #기존 존재하는 Nextwork 사용
